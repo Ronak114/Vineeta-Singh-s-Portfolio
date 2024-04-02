@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+  body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f1d3d3;
+  background-color: #030303;
+  margin: 0%;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  font-size: 100px;
+}
+
+a {
+  color: #9f72dadc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #96c9c9;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #bd0c0c;
+}
+
+header h1 {
+  color: #fff;
+  background-image: url('header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  margin: 0;
+}
+
+/* Main Content Styles */
+
+main {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.intro h2 {
+  font-size: 200px;
+  color: #ac0303;
+  text-align: center;
+  margin:0px 0px 10px 0px;
+}
+
+.video h2 {
+  color: #bd0c0c;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+}
+.anii p{
+  font-size: 150px;
+}
+</style>
+</head>
+<body>
+  <script src="main.js"></script>
+
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Acheivements</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="video-container">
+    <video autoplay loop muted>
+      <source src="WhatsApp Video 2023-04-28 at 05.16.02.mp4" type="video/mp4">
+    </video>
+  </div>
+    <main>
+      <section class="intro">
+        <!-- <h2>About Me</h2> -->
+        <!-- <p>Vineeta Singh is an Indian entrepreneur and CEO and co-founder of Sugar Cosmetics. She has been a shark (i.e. judge/investor) on the business reality TV show Shark Tank India since the show started airing on SonyLIV in 2021.</p> -->
+      </section>
+      
+      <!-- <section class="video">
+        <h2>Watch Vineeta in Action</h2>
+        <div class="video-wrapper">
+          <iframe src="https://youtu.be/nvd08A-lgNg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </section> -->
+
+      <div class="anii" style="text-align: left;">
+        <p><span class="intro-text">I'm a</span>
+        <span class="anim-txt" data-words='["CEO", "mother","IITan","daughter", "entrepreneur"]'></span>
+        </p>
+      </div>
+
+
+      <!-- <section class="video">
+        <h2>Watch Vineeta in Action</h2>
+        <div class="video-wrapper" data-video-id="https://youtu.be/nvd08A-lgNg"></div>
+      </section>
+       -->
+      <!-- <section class="testimonials">
+        <h2>What People are Saying</h2>
+        <div class="testimonial">
+          <p>"Vineeta is an inspiration to women entrepreneurs everywhere. Her dedication and drive are truly remarkable, and she has been instrumental in helping me take my business to the next level."</p>
+          <p class="name">- Jane Doe, Founder of XYZ Company</p>
+        </div>
+        <div class="testimonial">
+          <p>"Working with Vineeta has been a game-changer for my business. She has provided valuable guidance and support every step of the way, and I can't thank her enough for all that she has done."</p>
+          <p class="name">- John Smith, CEO of ABC Corporation</p>
+        </div> -->
+
+     <!-- </section> -->
+    </main>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="WhatsApp Image 2023-04-28 at 15.58.23.jpeg" style="width:100%">
+    <div class="text">Sugar Cosmetics</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="WhatsApp Image 2023-04-28 at 15.58.24.jpeg" style="width:100%">
+    <div class="text">Sugar Cosmetics</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="ve.jpeg" style="width:100%">
+    <div class="text">Sugar Cosmeticse</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!-- This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/). -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vineeta Singh's Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Inter 900 and roboto 400 fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .header {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+  #query {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border:2px solid rgb(115, 201, 179);
+    background-color: #a89898;
+    margin-bottom: 20px;
+    resize: none;
+    height: 150px;
+  }
+
+  #query-label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+    </style>
+
+    
+  </head>
+  <body>
+    <div class="container text-light animation">
+      <div class="text">
+        <p class="lh-1 fs-4 fs-5">
+        </p>
+
+        <table cellspacing="20" cellpadding="25">
+          <tr>
+            <td>
+              <img src=ve.jpeg width="400" height="400" />
+            </td>
+            <td>
+              <h1>VINEETA
+                SINGH</h1>
+                <br>
+                <br><br>
+              <p>Vineeta Singh is an Indian entrepreneur and CEO and co-founder of Sugar Cosmetics. She has been a shark (i.e. judge/investor) on the business reality TV show Shark Tank India since the show started airing on SonyLIV in 2021.
+              </p>
+            </td>
+        
+          </tr>
+        </table>
+
+        <div class="social media">
+
+          <!-- <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></a> -->
+          <!-- <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> -->
+
+          <div class="social-media-buttons">
+            <a href="https://www.linkedin.com/in/vineetasingh">
+              <img src="li.jpeg" alt="LinkedIn" height="40" width="40">
+            </a> 
+            <a href="https://instagram.com/vineetasng?igshid=YmMyMTA2M2Y=">
+              <img src="Instagram_logo.webp" alt="Instagram" height="40" width="40">
+            </a>
+            <a href="https://twitter.com/vineetasng?s=08">
+              <img src="twi.jpeg" alt="Twitter" height="40" width="40">
+            </a>
+          </div>
+
+          <!-- <a href="https://instagram.com/vineetasng?igshid=YmMyMTA2M2Y=" target="_blank">
+            <i class="bi bi-Instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vineetasingh" target="_blank">
+            <i class="bi bi-LinkedIn"></i>
+          </a>
+          <a href="https://twitter.com/vineetasng?s=08" target="_blank">
+            <i class="bi bi-Twitter"></i>
+          </a>
+          <a href="https://in.sugarcosmetics.com/products/vineetas-favourite-makeup-kit" target="_blank">
+            <i class="bi bi-Sugar Cosmetics"></i>
+          </a> -->
+
+        </div>
+      </div>
+      <div class="aw-btn">
+        <button class="btn bg-light awsome" onclick="awsome()">
+          awsome 😀
+        </button>
+
+      </div>
+    </div>
+    <script src="main.js"></script>
+
+    <header class="header">
+      <video autoplay muted loop class="video">
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+    </header>
+
+    <div class="container">
+      <h1>Welcome to my website!</h1>
+      <p>Here is some content...</p>
+    </div>
+
+    <!-- <div id="feedback"></div> -->
+
+    <div class="container">
+      <h2>Feedback</h2>
+      <input type="text" id="feedback-input" placeholder="Enter your feedback...">
+      <button onclick="submitFeedback()">Submit</button>
+      <div id="feedback"></div>
+    </div>
+  
+    <!-- <button onclick="submitFeedback()">Submit Feedback</button> -->
+
+    <form id="query">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="query">Query:</label>
+        <textarea id="query" name="query" required></textarea>
+      </div>
+      <button id="btn" type="submit">Submit Query</button>
+    </form>
+
+
+  </body>
+</html>

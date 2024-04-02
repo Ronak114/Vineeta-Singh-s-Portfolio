@@ -1,0 +1,154 @@
+<!DOCTYPE html
+>
+<head>
+  <title> reg form</title>
+
+</head>
+<style>
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-image: url("vene.jpeg");
+  background-size: cover;
+}
+
+/* Center the form */
+form {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  font-size: 100px;
+}
+
+/* Style the headings */
+h1, h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 100px;
+}
+
+/* Style the form inputs and labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 100px;
+}
+input[type=text], input[type=password], input[type=date],input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 100px;
+}
+input[type=image] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the radio buttons and checkboxes */
+input[type=radio], input[type=checkbox] {
+  margin-right: 20px;
+  font-size: 100px;
+}
+label[for=gender] {
+  margin-right: 20px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 100px;
+}
+input[type=submit]:hover {
+  background-color: #3e8e41;
+  font-size: 100px;
+}
+
+/* Style the error messages */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.para{
+  font-size: 40px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  font-size: 100px; /* increase the font size to 20px */
+}
+#comment{
+  font-size: 100px;
+}
+.para{
+  font-size: 150px;
+}
+
+</style>
+
+<body>
+<form onsubmit="return validateForm()">
+  <div class="contact-form">
+  <p class="para">
+
+    <strong> Now This is me, Vineeta, Signing off.Please share your review here and contact us</strong>
+  </p>
+    First Name : <input type="text" name="FirstName" required /><br><br>
+    last Name : <input type="text" name="lastName" required /><br><br>
+    Email ID : <input type="email" name="Email" required /><br><br>
+    Password: <input type="password" name="Password" id="password" required /><br><br>
+    DOB :  <input type="date" name="DOB" required /><br><br>
+   <br><br>
+
+  
+
+    COMMENT:
+      <br><br>
+    <input type="textbox" id="comment" name="COmment" >
+    <br><br>
+   
+    <input type="submit" value="Submit">
+  </div>
+</form>
+  <script > function validateForm() {
+      // Get the form inputs
+      var firstName = document.forms[0]["FirstName"].value;
+      var lastName = document.forms[0]["lastName"].value;
+      var userId = document.forms[0]["UserID"].value;
+      var password = document.forms[0]["Password"].value;
+      var dob = document.forms[0]["DOB"].value;
+      var gender = document.forms[0]["Gender"].value;
+
+      // Check if the required fields are filled
+      if (firstName == "" || lastName == "" || userId == "" || password == "" || dob == "" || gender == "") {
+          alert("Please fill all the required fields");
+          return false;
+      }
+
+      // Check if the password meets the requirements
+      if (password.length < 8) {
+          alert("Password should be at least 8 characters long");
+          return false;
+      }
+
+      // Check if the date of birth is valid
+      var currentDate = new Date();
+      var dobDate = new Date(dob);
+      if (dobDate > currentDate) {
+          alert("Please enter a valid date of birth");
+          return false;
+      }
+
+      // If all validations pass, submit the form
+      return true;
+  }
+</script>
+</body>
+</html>
